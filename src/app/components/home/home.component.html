@@ -1,0 +1,32 @@
+<h1 style="justify-content: center; display: flex;">SEJA BEM VINDO AO CURSO FULLSTACK</h1>
+<p style="justify-content: center; display: flex;">nesse curso voce aprendera do zero a se torna um programador fullstack, aprendendo os conceitos basicos de FrontEnd e BackEnd</p>
+
+<!-- <div class="row">
+  <div class="col">
+    <img src="assets/img/image1.jpg">
+  </div>
+  <div class="col">
+    <img class="" src="assets/img/image2.jpg">
+  </div>
+</div>
+-->
+<h4>Seja bem vindo ao curso de angular</h4>
+<h4 class="text-danger">{{anuncio}}</h4>
+
+<div class="card" style="width: 18rem;">
+  <img [src]="foto" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{nomeProduto |uppercase}}
+      <span *ngIf="promocao;else elseblock " class="badge badge-success">promoção
+      </span>
+      <ng-template #elseblock>
+        <span class="badge badge-primary">aproveite</span>
+      </ng-template>
+    </h5>
+    <p class="card-text">Identificação: {{idProduto | number: '2.0-0'}} <br>
+      Validade {{dataValidade | date : 'shortDate'}}
+    </p>
+    <a href="#" class="btn btn-primary">{{precoProduto }}</a>
+  </div>
+</div>
